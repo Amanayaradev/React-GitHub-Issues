@@ -1,4 +1,4 @@
-# README - Projeto React GitHub Issues
+# Projeto React GitHub Issues
 
 Este é um projeto React que permite visualizar as issues de um repositório do GitHub.
 
