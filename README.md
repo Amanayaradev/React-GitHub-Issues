@@ -1,6 +1,6 @@
 # Projeto React GitHub Issues
 
-[projetoIssues](https://react-git-hub-issues.vercel.app/)
+[Projeto Issues](https://react-git-hub-issues.vercel.app/)
 
 ![projetoIssues](https://github.com/Amanayaradev/React-GitHub-Issues/assets/99840582/55bd1bd6-1bc4-4bd6-ade9-2edad3dc229a)
 Este é um projeto React que permite visualizar as issues de um repositório do GitHub.
