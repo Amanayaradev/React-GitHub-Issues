@@ -1,55 +1,88 @@
 body {
   background-color: black;
+  margin: 0 auto; /* Adicionado para remover margens padrão do body */
+  max-width: 850px;
 }
+
+
 .box-main {
-  margin: 0 auto;
+  margin: 5rem auto;
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
   align-items: center;
   border-radius: 0.5rem;
-  max-width: 850px;
+  max-width: 100%; /* Alterado para 100% */
   background-color: white;
-  padding: 5rem 0;
+  padding: 5rem 2rem; /* Ajuste o padding */
 }
+
 form {
   display: grid;
   grid-template-columns: 7fr 1fr;
   padding: 1rem;
 }
+
 .center-box {
-  background-color: white;
-  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+}
+
+.center-box li {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.center-box li div {
+  padding: 1rem;
 }
 
 .box-main h1 {
   color: black;
   padding: 1rem;
 }
+
 ul {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 1rem;
 }
+
 .listaRepo {
-  background-color: black;
-  padding: 2rem 1rem;
-  display: flex;
+  background-color: rgb(0, 0, 0);
+  display: grid;
   color: white;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
   list-style: none;
 }
 
+.lista-repo-home {
+  padding: 1rem;
+  display: grid;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+}
+.lista-repo-home li {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem 0;
+}
 .button_pesquisar {
   background-color: black;
   color: white;
   padding: 1rem 3rem;
   border-style: none;
 }
+
 form input {
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border-style: 2px solid black;
 }
 
@@ -59,11 +92,13 @@ form input {
   color: white;
   background-color: transparent;
 }
-/* pag user */
+
+/* Estilos para a página de usuário */
 
 .image-user {
+  padding: 0 1rem;
   width: 4rem;
-  border-radius: 360px;
+  border-radius: 100%;
 }
 
 .lista-user {
@@ -76,13 +111,12 @@ form input {
 
 .box-produto {
   margin: 5rem auto;
-  max-width: 850px;
-  display: grid;
-  grid-template-columns: 1fr;
+  max-width: 100%; /* Alterado para 100% */
   border-radius: 0.5rem;
-  background-color: white;
-  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem; /* Ajuste o padding */
 }
+
 a {
   text-decoration: none;
   color: white;
@@ -103,22 +137,42 @@ a {
   border-style: none;
   padding: 1rem;
 }
+
 .btn-back-next {
-  padding: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  gap: 25rem;
+  gap: 1rem;
 }
 
 .img-logo {
+  margin: 0 auto;
+  display: grid;
   width: 10rem;
-  padding: 0 10rem;
-  align-items: center;
 }
 
 .btn-back-next button {
   background-color: black;
   color: white;
   padding: 1rem;
+}
+
+.center-text-icon {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .box-main {
+    padding: 3rem 1rem;
+  }
+
+  .btn-back-next button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box-main {
+    padding: 2rem 1rem;
+  }
 }

@@ -74,7 +74,7 @@ function Produto() {
   return (
     <div className='box-produto'>
       {dataUser.length > 0 && (
-        <div className='center-box'>
+        <div>
           <div>
             <Link to='/' className='material-symbols-outlined'>
               arrow_back_ios
@@ -82,8 +82,8 @@ function Produto() {
           </div>
           <img className='img-logo' src={dataRepo.owner.avatar_url} alt={dataRepo.owner.login} />
           
-          <h1>{dataRepo.name}</h1>
-          <p>{dataRepo.description}</p>
+          <h1 className='center-text-icon'>{dataRepo.name}</h1>
+          <p  className='center-text-icon'>{dataRepo.description}</p>
         </div>
       )}
         <div className='filters'>
@@ -100,7 +100,7 @@ function Produto() {
         </div>
       <ul className='center-box'>
         {dataUser.map((issue) => (
-          <li className='listaRepo lista-user' key={String(issue.id)}>
+          <li className='listaRepo' key={String(issue.id)}>
             <img className='image-user' src={issue.user.avatar_url} alt={issue.user.login} />
 
             <div>

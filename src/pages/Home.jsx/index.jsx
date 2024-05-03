@@ -83,9 +83,9 @@ export default function Home() {
           </button>
         </form>
 
-        <ul>
+        <ul className='lista-repo-home'>
           {repositorios.map((repo, index) => (
-            <li className='listaRepo' key={index}>
+            <li key={index}>
               <button
                 onClick={() => handleDelete(repo.name)}
                 className='button_icon material-symbols-outlined'
