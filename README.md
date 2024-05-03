@@ -1,2 +1,17 @@
-# React-GitHub-Issues
-Projeto React GitHub Issues 
+# README - Projeto React GitHub Issues
+
+Este é um projeto React que permite visualizar as issues de um repositório do GitHub.
+
+## Funcionalidades
+
+- Visualizar detalhes do repositório, incluindo nome, descrição e imagem do dono.
+- Alternar entre issues abertas e fechadas.
+- Paginar pelas issues.
+
+Para testar o aplicativo, digite um dos seguintes nomes de repositório no campo de pesquisa:
+
+- "angular/angular" para testar com o repositório oficial do Angular no GitHub.
+- "facebook/react" para testar com o repositório oficial do React no GitHub.
+
+Depois de digitar um desses nomes de repositório, pressione Enter para ver as issues correspondentes.
+
